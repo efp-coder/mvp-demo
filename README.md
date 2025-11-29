@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Scope
+This project aims to learn several things at the same time and create a minimal working project (MVP). 
+
+## App
+The aim is to create a tech education app for Python, the app should contain free tier exploration, account management flow (part of payment flow) and buddy invite flow (Part email flow). 
+
+
+## Tech Stack
+* Typescript
+* Next.js 
+* React
+* Deployment: Vercel
+* Payment flow: Stripe
+* Email: Dreamlit
+* CSS: Tailwind
+* Video provider/embedder: Vimeo
+* Backend: Supabase
+
 
 ## Getting Started
 

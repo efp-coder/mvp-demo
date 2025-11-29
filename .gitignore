@@ -1,6 +1,45 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#
 
-# dependencies
+# Local things
+local-assets/
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Icon
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.icloud
+
+### Windows ###
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+### Node / Dependencies ###
 /node_modules
 /.pnp
 .pnp.*
@@ -10,32 +49,67 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# next.js
+### Next.js ###
 /.next/
 /out/
+.build
+.next-env.d.ts
 
-# production
+### Production / Build ###
 /build
+/dist
+/.nuxt
+/.svelte-kit
+/.serverless
+/.cache
+.parcel-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.fusebox/
 
-# misc
-.DS_Store
-*.pem
+### Testing / Coverage ###
+/coverage
+.nyc_output
+.lcov
+.grunt
 
-# debug
+### Logs / Debug ###
+logs
+*.log
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+### Env files ###
 .env*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# vercel
-.vercel
-
-# typescript
+### Misc / IDE / Editor ###
+*.pem
+*.sublime*
 *.tsbuildinfo
-next-env.d.ts
+.node_repl_history
+.tern-port
+.vscode-test
+.psd
+.thumb
+.sketch
+**/*.backup.*
+**/*.back.*
+web_modules/
+lib-cov
+build/Release
+
+### Optional caches ###
+.nyc_output
+.yarn-integrity
+.eslintcache
+.stylelintcache

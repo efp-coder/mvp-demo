@@ -2,7 +2,7 @@
 #
 
 # Local things
-local-assets/
+/local-assets
 
 ### macOS ###
 .DS_Store

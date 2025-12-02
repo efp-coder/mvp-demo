@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="flex bg-primary p-4 text-2xl justify-between items-center relative z-50">
-      <section className="bg-background text-accent p-2 rounded-md text-balance m-2">{sectionText}</section>
+      <section className="bg-background text-accent p-2 rounded-md text-balance m-2 font-code">{sectionText}</section>
       <Button text={menuSymbol} onClick={toggleMenu} />
       {isMenuOpen && <NavBar closeMenu={toggleMenu} />}
     </header>

@@ -15,7 +15,7 @@ export default function NavLink({ children, href = "/", pressLink }: NavLinkProp
       className="
       text-center 
       w-2/3 
-      font-header 
+      font-body 
       bg-background 
       text-foreground 
       py-2 px-8 

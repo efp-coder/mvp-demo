@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bodoni_Moda, Jost, Fira_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header"
+import Footer from "@/components/Footer";
 
 const bodoni = Bodoni_Moda({
   variable: "--font-header",
@@ -35,10 +36,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${bodoni.variable} ${jost.variable} ${firaMono.variable}`}
+        className={`flex flex-col min-h-screen antialiased ${bodoni.variable} ${jost.variable} ${firaMono.variable}`}
       >
         <Header />
-        {children}
+        <main className="flex-1 bg-primary-light">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

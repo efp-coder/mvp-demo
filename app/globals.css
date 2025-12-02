@@ -21,6 +21,7 @@
 
     /* Primary and Grays */
     --color-primary-light: 168 200 235;
+    --color-primary-dark: 31 79 121;
     --color-primary: 79 144 214;
     --color-gray-light: 217 217 217;
     --background: var(--color-background-light); 

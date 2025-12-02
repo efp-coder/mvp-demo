@@ -13,6 +13,7 @@ module.exports = {
         // Primary
         primary: "rgb(var(--color-primary) / <alpha-value>)",
         "primary-light": "rgb(var(--color-primary-light) / <alpha-value>)",
+        "primary-dark": "rgb(var(--color-primary-dark) / <alpha-value>)",
 
         // Grays
         "gray-light": "rgb(var(--color-gray-light) / <alpha-value>)",

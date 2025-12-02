@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bodoni_Moda, Jost, Fira_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header"
 
 const bodoni = Bodoni_Moda({
   variable: "--font-header",
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body
         className={`antialiased ${bodoni.variable} ${jost.variable} ${firaMono.variable}`}
       >
+        <Header />
         {children}
       </body>
     </html>

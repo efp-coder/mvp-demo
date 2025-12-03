@@ -39,7 +39,7 @@ export default function RootLayout({
         className={`flex flex-col min-h-screen antialiased ${bodoni.variable} ${jost.variable} ${firaMono.variable}`}
       >
         <Header />
-        <main className="flex-1 bg-primary-light">
+        <main className="flex flex-col flex-1 bg-primary-light">
           {children}
         </main>
         <Footer />

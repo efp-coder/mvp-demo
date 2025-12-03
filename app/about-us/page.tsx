@@ -1,6 +1,6 @@
 export default function AboutUs() {
   return (
-    <section>
+    <section className="flex-1">
       Hello from about us
     </section>
   );

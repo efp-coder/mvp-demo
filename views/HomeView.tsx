@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import BodyText from "@/components/BodyText";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function HomeView() {
   const [show, setShow] = useState(false);
@@ -36,12 +37,12 @@ export default function HomeView() {
       </section>
 
       <section className="flex flex-col flex-1 items-center justify-center relative p-4 bg-primary-light/60 text-center">
+        <SectionHeader>A promise from the team</SectionHeader>
         <BodyText>
-          This is paragraph text.<br />
-          Vestibulum sit amet lorem neque. Vestibulum non felis lobortis, dapibus nisl in, vehicula ante. Morbi a ligula et tortor sodales sollicitudin vel in justo. Pellentesque id porttitor magna. Sed vulputate nisl non scelerisque pellentesque. Vivamus at est varius, blandit elit ultricies, commodo orci. Praesent facilisis turpis et velit mollis maximus. Duis faucibus arcu massa, et euismod ante tincidunt non. Praesent fermentum enim ut ipsum imperdiet, eu tincidunt risus tempus. Ut purus lacus, cursus non nisi in, porta consectetur tellus. Vestibulum condimentum rhoncus vestibulum. Etiam iaculis ante id massa aliquet mattis. Integer vitae metus varius, tincidunt erat nec, semper libero.
-
-          Etiam posuere bibendum nibh sed pellentesque. Sed imperdiet hendrerit felis a auctor. Nam cursus sem eros, vel tincidunt mauris lacinia eget. Pellentesque fringilla risus sem, nec pretium lorem sollicitudin a. Phasellus iaculis volutpat nunc ut elementum. Duis eget semper ex. Pellentesque nisl magna, consectetur in sem vitae, pulvinar condimentum sapien. Mauris lacinia et velit rhoncus sodales. Proin bibendum, lorem ac pretium semper, lacus felis blandit odio, in viverra eros est quis elit. Maecenas porttitor ex fringilla mattis bibendum. Aliquam porta quis odio in aliquet. Praesent malesuada arcu eget diam placerat porta. Nam et mauris eget mi sollicitudin venenatis in a orci.
-
+          We cannot all excel at programming, but we can all learn the basics, improve our understanding of the world and find convenience in small automations projects.
+          <br />
+          <br />
+          So have you been dealing with repetative tasks and thought <blockquote className="italic bg-background text-foreground">This could be automated! </blockquote>
         </BodyText>
         <BodyText>
           Other text.<br />
